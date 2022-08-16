@@ -1,0 +1,6 @@
+{{ range . }}
+// {{ .Country.Name}}
+	{{ range .ASNs }}
+IP-ASN,{{ .ASN}} // {{ .Name}}
+	{{- end }}
+{{ end }}
